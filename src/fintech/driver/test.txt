@@ -1,0 +1,40 @@
+input: 
+show-accounts
+create-account#Wiro Sableng#wirsab
+create-account#Jaka Sembung#jasemb
+create-account#Jaka Sembung#jaksem
+remove-account#jaksen
+show-accounts
+create-account#Jaka Sembung#jasemb
+create-account#Milkyman#milkyn
+remove-account#jaksen
+remove-account#MILKYN
+show-accounts
+---
+
+
+
+Expected:
+wirsab|Wiro Sableng|0.0
+jasemb|Jaka Sembung|0.0
+jaksem|Jaka Sembung|0.0
+jaksem|Jaka Sembung|0.0
+jasemb|Jaka Sembung|0.0
+wirsab|Wiro Sableng|0.0
+milkyn|Milkyman|0.0
+jaksem|Jaka Sembung|0.0
+jasemb|Jaka Sembung|0.0
+wirsab|Wiro Sableng|0.0
+
+Actual:
+wirsab|Wiro Sableng|0.0
+jasemb|Jaka Sembung|0.0
+jaksem|Jaka Sembung|0.0
+jaksem|Jaka Sembung|0.0
+jasemb|Jaka Sembung|0.0
+wirsab|Wiro Sableng|0.0
+milkyn|Milkyman|0.0
+jaksem|Jaka Sembung|0.0
+jasemb|Jaka Sembung|0.0
+milkyn|Milkyman|0.0
+wirsab|Wiro Sableng|0.0
